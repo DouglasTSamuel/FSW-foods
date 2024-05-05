@@ -114,12 +114,12 @@ const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
 
           <div className="flex flex-col items-center">
             <div className="flex items-center gap-1 text-muted-foreground">
-              <span className="text-xs">Tempo</span>
+              <span className="text-xs">Entrega</span>
               <TimerIcon size={14} />
             </div>
 
             <p className="text-xs font-semibold">
-              {product.restaurant.deliveryTimeMinutes}
+              {product.restaurant.deliveryTimeMinutes} min
             </p>
           </div>
         </Card>
