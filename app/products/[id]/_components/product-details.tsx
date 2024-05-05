@@ -33,7 +33,7 @@ interface ProductDetailsProps {
 }
 
 const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   const handleInscreaseQuantityClick = () => {
     if (count < 99) {
@@ -48,7 +48,7 @@ const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
   };
 
   return (
-    <div className="relative mt-[-22px] rounded-tl-3xl rounded-tr-3xl bg-white py-5">
+    <div className="relative mt-[-22px] rounded-tl-3xl rounded-tr-3xl bg-white pt-5">
       <div className="flex items-center gap-[6px] px-5">
         <div className="relative h-6 w-6">
           <Image
@@ -133,6 +133,10 @@ const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
       <div className="mt-6 space-y-3">
         <h3 className="text-semibold px-5">{product.category.name}</h3>
         <ProductList products={otherProducts} />
+      </div>
+
+      <div className="sticky bottom-0 left-0 w-full bg-white px-5 py-6">
+        <Button className="w-full font-semibold">Adicionar à sacola</Button>
       </div>
     </div>
   );
