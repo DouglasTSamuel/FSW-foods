@@ -7,7 +7,7 @@ interface CategoryItemProps {
 
 const CategoryItem = ({ category }: CategoryItemProps) => {
   return (
-    <div className="scrollbar-none flex h-[54px] min-w-fit items-center gap-3 scroll-smooth rounded-full bg-white px-4 py-3 shadow-md">
+    <div className="flex h-[54px] min-w-fit items-center gap-3 overflow-x-auto scroll-smooth rounded-full bg-white px-4 py-3 shadow-md [&::-webkit-scrollbar]:hidden">
       <Image
         src={category.imageUrl}
         alt={category.name}
