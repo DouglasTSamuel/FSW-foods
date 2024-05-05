@@ -6,7 +6,7 @@ const CategoryList = async () => {
 
   return (
     //TODO: Mudar falar display flex
-    <div className="grid grid-cols-2 gap-3">
+    <div className="flex items-center gap-3 overflow-x-auto pb-6">
       {categories.map((category) => (
         <CategoryItem category={category} key={category.id} />
       ))}
