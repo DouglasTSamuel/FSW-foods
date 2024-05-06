@@ -24,6 +24,7 @@ const ProductImage = ({ product }: ProductImageProps) => {
       <Button
         onClick={() => router.back()}
         size="icon"
+        aria-label="Voltar para a página anterior"
         className="absolute left-4 top-4 rounded-full bg-white text-foreground hover:text-white"
       >
         <ChevronLeftIcon />

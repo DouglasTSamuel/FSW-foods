@@ -33,6 +33,7 @@ const RestaurantItem = ({ restaurant, className }: RestaurantItemProps) => {
 
           <Button
             size="icon"
+            aria-label="Adicionar ou remover do favoritos"
             className="absolute right-2 top-2 h-7 w-7 rounded-full bg-gray-700"
           >
             <HeartIcon size={16} className="fill-white" />

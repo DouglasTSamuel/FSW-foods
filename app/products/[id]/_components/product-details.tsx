@@ -78,6 +78,7 @@ const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
         <div className="flex items-center gap-3 text-center">
           <Button
             size="icon"
+            aria-label="Diminuir a quantidade"
             variant="ghost"
             className="border border-solid border-muted-foreground"
             onClick={handleDecreaseQuantityClick}
@@ -86,7 +87,11 @@ const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
           </Button>
           <span className="w-4"> {count}</span>
 
-          <Button size="icon" onClick={handleInscreaseQuantityClick}>
+          <Button
+            size="icon"
+            aria-label="Aumentar a quantidade"
+            onClick={handleInscreaseQuantityClick}
+          >
             <ChevronRightIcon />
           </Button>
         </div>
@@ -107,7 +112,12 @@ const ProductDetails = ({ product, otherProducts }: ProductDetailsProps) => {
       </div>
 
       <div className="sticky bottom-0 left-0 w-full bg-white px-5 py-6">
-        <Button className="w-full font-semibold">Adicionar à sacola</Button>
+        <Button
+          aria-label="Adicionar à sacola"
+          className="w-full font-semibold"
+        >
+          Adicionar à sacola
+        </Button>
       </div>
     </div>
   );

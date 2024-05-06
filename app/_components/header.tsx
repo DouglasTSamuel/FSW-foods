@@ -18,6 +18,7 @@ const Header = () => {
       </div>
       <Button
         size="icon"
+        aria-label="Abrir/Fechar menu"
         variant="outline"
         className="border-none bg-transparent"
       >

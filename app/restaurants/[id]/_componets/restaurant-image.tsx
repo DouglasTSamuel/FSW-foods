@@ -23,6 +23,7 @@ const RestaurantImage = ({ restaurant }: RestaurantImageProps) => {
       <Button
         onClick={() => router.back()}
         size="icon"
+        aria-label="Voltar para a página anterior"
         className="absolute left-4 top-4 rounded-full bg-white text-foreground hover:text-white"
       >
         <ChevronLeftIcon />
@@ -30,6 +31,7 @@ const RestaurantImage = ({ restaurant }: RestaurantImageProps) => {
 
       <Button
         size="icon"
+        aria-label="Adicionar ou remover do favoritos"
         className="absolute right-4 top-4 rounded-full bg-gray-700 hover:text-white"
       >
         <HeartIcon size={20} className="fill-white" />

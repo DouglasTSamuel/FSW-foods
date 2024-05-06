@@ -46,6 +46,7 @@ const Home = async () => {
           <h2 className="font-semibold">Pedidos recomendados</h2>
           <Button
             variant="ghost"
+            aria-label="Ver pedidos recomendados"
             className="h-fit p-0 text-primary hover:bg-transparent"
           >
             Ver todos
@@ -68,6 +69,7 @@ const Home = async () => {
           <Link href="/restaurants/recommended">
             <Button
               variant="ghost"
+              aria-label="Ver restaurantes recomendados"
               className="h-fit p-0 text-primary hover:bg-transparent"
             >
               Ver todos
