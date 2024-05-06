@@ -8,8 +8,8 @@ import RestaurantItem from "../_components/restaurant-item";
 import Header from "../_components/header";
 
 const RestaurantsPage = () => {
-  const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const searchParams = useSearchParams();
+  const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const searchFor = searchParams.get("search");
 
   useEffect(() => {
@@ -22,7 +22,9 @@ const RestaurantsPage = () => {
     fetchRestaurants();
   }, [searchFor]);
 
-  if (!searchFor) notFound();
+  if (!searchFor) {
+    return notFound();
+  }
 
   return (
     <>

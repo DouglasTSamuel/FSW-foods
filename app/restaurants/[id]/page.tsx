@@ -50,7 +50,9 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
     },
   });
 
-  if (!restaurant) notFound();
+  if (!restaurant) {
+    return notFound();
+  }
 
   return (
     <div className="bg-white">

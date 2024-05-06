@@ -27,7 +27,10 @@ const CategoriesPage = async ({ params: { id } }: CategoriesPageProps) => {
     },
   });
 
-  if (!productsByCategory) notFound();
+  if (!productsByCategory) {
+    return notFound();
+  }
+
   return (
     <>
       <Header />

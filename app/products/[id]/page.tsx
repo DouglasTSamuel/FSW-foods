@@ -35,7 +35,9 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
     },
   });
 
-  if (!product) notFound();
+  if (!product) {
+    return notFound();
+  }
 
   return (
     <div>
