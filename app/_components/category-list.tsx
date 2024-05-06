@@ -6,7 +6,7 @@ const CategoryList = async () => {
 
   return (
     //TODO: Mudar falar display flex
-    <div className="flex items-center gap-3 overflow-x-auto pb-6">
+    <div className="flex items-center gap-3 overflow-x-auto scroll-smooth pb-6 [&::-webkit-scrollbar]:hidden">
       {categories.map((category) => (
         <CategoryItem category={category} key={category.id} />
       ))}
